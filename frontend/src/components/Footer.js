@@ -109,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="text-center mt-6">
-          <p className="text-black">Made with ❤️ By<span className="text-red-600 font-bold"> Usama Nazeer</span> & Team</p>
+          <p className="text-black">Made with ❤️ By<span className="text-red-600 font-bold"> Usama Nazeer </span> And Team</p>
         </div>
       </div>
     </footer>
