@@ -19,6 +19,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-200 relative bottom-0 w-full">
       <div className="container mx-auto py-6 px-4">
+        {/* Main Title Animation */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +33,7 @@ const Footer = () => {
         </motion.div>
 
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-6 lg:space-y-0">
-          {/* Find Us Here Section */}
+          {/* Find Us Here Section with Cool Animation */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -50,26 +51,11 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Quick Links Section */}
+          {/* Contact Us Section with Cool Animation */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: false }}
-            className="box text-center lg:text-left lg:mx-4"
-          >
-            <h3 className="text-xl font-bold mb-2 text-red-600">Quick Links</h3>
-            <a href="#" className="block text-black mb-1">Privacy Policy</a>
-            <a href="#" className="block text-black mb-1">Return & Exchanges</a>
-            <a href="#" className="block text-black mb-1">Shipping Information</a>
-            <a href="#" className="block text-black">Customer Reviews</a>
-          </motion.div>
-
-          {/* Contact Us Section */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: false }}
             className="box text-center lg:text-left lg:mx-4"
           >
@@ -79,11 +65,11 @@ const Footer = () => {
             <p className="text-black"><FaEnvelope className="inline-block mr-2 text-red-600" />info@fitmart.com</p>
           </motion.div>
 
-          {/* Newsletter Section */}
+          {/* Newsletter Section with Cool Animation */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: false }}
             className="box text-center lg:text-left lg:mx-4"
           >
@@ -108,8 +94,9 @@ const Footer = () => {
           </motion.div>
         </div>
 
+        {/* Footer Note */}
         <div className="text-center mt-6">
-          <p className="text-black">Made with ❤️ By<span className="text-red-600 font-bold"> Usama Nazeer </span> And Team</p>
+          <p className="text-black">Made with ❤️ By <span className="text-red-600 font-bold">Usama Nazeer</span> & Team</p>
         </div>
       </div>
     </footer>
