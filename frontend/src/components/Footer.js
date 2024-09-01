@@ -93,11 +93,6 @@ const Footer = () => {
             {message && <p className="mt-2 text-black">{message}</p>}
           </motion.div>
         </div>
-
-        {/* Footer Note */}
-        <div className="text-center mt-6">
-          <p className="text-black">Made with ❤️ By <span className="text-red-600 font-bold">Usama Nazeer</span>&<span className="text-red-600 font-bold">Qasim Ali</span></p>
-        </div>
       </div>
     </footer>
   );
